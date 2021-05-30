@@ -1,0 +1,18 @@
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+
+<body class="challengebg">
+    <center>
+        <div class="box-element m-5" style="width: 400px;">
+            <form class="form-group">
+                <h4>Dare Enough to take a challenge?</h4><hr>
+                <p>what it takes to burn all those calories after a delicious and healthy meal</p>
+                <p>take this small workout challenge and burn off those calories.</p>
+                <a type="submit" href="{% url 'warmup' %}" class="btn btn-info form-control">Take Challenge</a>
+            </form>
+        </div>
+    </center>  
+</body>
+
+{% endblock content %}

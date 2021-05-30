@@ -1,0 +1,32 @@
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+
+<div class="wrap">
+    <form class="search" action="{% url 'searchbar' %}" method="GET">
+       <input type="text" class="searchTerm" name="search" placeholder="search your favourite dishes">
+       <button type="submit" class="searchButton">
+         <i class="fa fa-search"></i>
+      </button>
+    </form>
+</div>
+
+<br><br>
+
+	<div class="row">
+		{% for product in products %}
+		<div class="col-lg-4">
+			<img class="thumbnail" src="{{product.imageURL}}">
+			<div class="box-element product">
+				<h6><strong>{{product.name}}</strong></h6>
+				<hr>
+				<button data-product="{{product.id}}" data-action="add" class="btn btn-info add-btn update-cart">Add to Cart</button>
+				<a class="btn btn-warning" href="#">Cal : <strong>{{product.calories}}</strong></a>
+				<h4 style="display: inline-block; float: right"><strong>₹{{product.price}}</strong></h4>
+
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+
+{% endblock content %}

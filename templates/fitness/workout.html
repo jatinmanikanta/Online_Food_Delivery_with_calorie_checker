@@ -1,0 +1,119 @@
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+
+<h2>Follow the workouts below</h2>
+<hr>
+<div class="row m-4">
+    <div class="col-md-6">
+        <img src="{% static 'fitpic/sidelegraise.jpg' %}" width="300px" height="300px">
+    </div>
+    <div class="col-md-6 p-5">
+        <br>
+        <h2 class="text-info">Side Leg Raise</h2><hr>
+        <h5>reps : 12</h5>
+        <h5>break : 20 seconds</h5>
+    </div>
+</div>
+
+<div class="row m-4">
+    <div class="col-md-6 p-5">
+        <br>
+        <h2 class="text-info">Tricep Dips</h2><hr>
+        <h5>reps : 15</h5>
+        <h5>break : 20 seconds</h5>
+    </div>
+    <div class="col-md-6">
+        <img src="{% static 'fitpic/tricepdip.jpg' %}" width="400px" height="300px">
+    </div>
+</div>
+
+<div class="row m-4">
+    <div class="col-md-6">
+        <img src="{% static 'fitpic/pilesquat.jpg' %}" width="300px" height="300px">
+    </div>
+    <div class="col-md-6 p-5">
+        <br>
+        <h2 class="text-info">Rise and pile</h2><hr>
+        <h5>reps : 10</h5>
+        <h5>break : 25 seconds</h5>
+    </div>
+</div>
+
+<div class="row m-4">
+    <div class="col-md-6 p-5">
+        <br>
+        <h2 class="text-info">Arm Circle</h2><hr>
+        <h5>reps : 30</h5>
+        <h5>break : 20 seconds</h5>
+    </div>
+    <div class="col-md-6">
+        <img src="{% static 'fitpic/armcircle.jpg' %}" width="300px" height="300px">
+    </div>
+</div>
+
+<div class="row m-4">
+    <div class="col-md-6">
+        <img src="{% static 'fitpic/lunges.jpg' %}" width="400px" height="300px">
+    </div>
+    <div class="col-md-6 p-5">
+        <br>
+        <h2 class="text-info">Lunges</h2><hr>
+        <h5>reps : 10</h5>
+        <h5>break : 20 seconds</h5>
+    </div>
+</div>
+
+<div class="row m-4">
+    <div class="col-md-6 p-5">
+        <br>
+        <h2 class="text-info">Lateral Arm Circle</h2><hr>
+        <h5>reps : 30</h5>
+        <h5>break : 25 seconds</h5>
+    </div>
+    <div class="col-md-6">
+        <img src="{% static 'fitpic/armcircle.jpg' %}" width="300px" height="300px">
+    </div>
+</div>
+
+<div class="row m-4">
+    <div class="col-md-6">
+        <img src="{% static 'fitpic/sidelegraise.jpg' %}" width="300px" height="300px">
+    </div>
+    <div class="col-md-6 p-5">
+        <br>
+        <h2 class="text-info">Side Leg Raise</h2><hr>
+        <h5>reps : 12</h5>
+        <h5>break : 25 seconds</h5>
+    </div>
+</div>
+
+<div class="row m-4">
+    <div class="col-md-6 p-5">
+        <br>
+        <h2 class="text-info">Rise and pile</h2><hr>
+        <h5>reps : 10</h5>
+        <h5>break : 25 seconds</h5>
+    </div>
+    <div class="col-md-6">
+        <img src="{% static 'fitpic/pilesquat.jpg' %}" width="300px" height="300px">
+    </div>
+</div>
+
+<div class="row m-4">
+    <div class="col-md-6">
+        <img src="{% static 'fitpic/tricepdip.jpg' %}" width="400px" height="300px">
+    </div>
+    <div class="col-md-6 p-5">
+        <br>
+        <h2 class="text-info">Tricep Dips</h2><hr>
+        <h5>reps : 15</h5>
+    </div>
+</div>
+
+<div class="p-5">
+    <a href="{% url 'finish' %}" class="btn btn-info btn-block">Finish Workout</a>
+</div>
+
+
+{% endblock content %}

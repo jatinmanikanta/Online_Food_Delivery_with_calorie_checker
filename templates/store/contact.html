@@ -1,0 +1,46 @@
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+
+<div class="center container row">
+    <div class="col-md-4 text-center p-3">
+        <img src="{% static 'images/contact.jpg' %}" width="200px" height="300px">
+    </div>   
+    <div class="col-md-8">
+        <h4>Got an Issue? Contact us here</h4>
+        <hr>
+        <p>we are here to solve your queries</p>
+        <table class="table table-stripped border">
+            <tr class="table-info">
+                <th>info</th>
+                <th>Deplay in order?</th>
+                <th>faulty order</th>
+                <th>Complain</th>
+                <th>reach us</th>
+            </tr>
+            <tr>
+                <td>Call:</td>
+                <td>9191919191</td>
+                <td>9292929292</td>
+                <td>9393939393</td>
+                <td>9494949494</td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td>no mail</td>
+                <td>fitbytes@orders.com</td>
+                <td>fitbytes@support.com</td>
+                <td>no mail</td>
+            </tr>
+
+           <tr>
+               <td>Address</td>
+               <td colspan="4">plot no.22 Madhapur fitbytes Complex Hyderabad 500018, Telangana India</td>
+           </tr>
+            
+        </table>
+       
+    </div>
+</div>
+
+{% endblock content %}
